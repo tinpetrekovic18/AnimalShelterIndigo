@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-REh1guqDqyqjAsA0EBkp8xPzwr3uRwFKCt4DxIefhPI6LIOAV0mODQNsM5dS1w+iF3QbVcyF70a1ZlZBk7hFdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Donirajte.css">
+    
+</head>
+
+<body style="background-color:white;">
+    <div class="navbar">
+        <div id="logoContainer"  onclick="window.location.href='../projekt-naslovna.html';">
+            <img class="logo-navigation" src="../Images/Logo-navigation.png">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Uključite se
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Volontiranje.html">Volontiranje i rad u udruzi</a>
+                <a href="Radionice.html">Radionice i događanja</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Pronađite ljubimca
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Psi.html">Psi</a>
+                <a href="Macke.html">Mačke</a>
+                <a href="Pronadite.html">Pronađite svog ljubimca</a>
+            </div>
+        </div>
+        <a href="SretnoUdomljeni.html">Sretno udomljeni</a>
+        <div class="dropdown">
+            <button class="dropbtn">Zatražite savjet
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Najcesca-pitanja.html">Najčešća pitanja</a>
+                <a href="NovoPitanje.html">Novo pitanje</a>
+                <a href="https://www.facebook.com/groups/253747272139419/" target="_blank">Forum</a>
+            </div>
+        </div>
+        <a href="Info.html">Info</a>
+        <a href="O-Udruzi.html">O udruzi</a>
+        <a class="donategumb" href="Donirajte.html" style="background-color: #82B84B; color:white">DONIRAJTE</a>
+    </div>
+
+
+    <div class="veljiki">
+
+    <div class="left-container">
+        <img src="../Images/paw-icon.png" alt="Left Image">
+    </div>
+
+
+    <div class="donation-container">
+        <h2 class="est" style="text-align: center;">Hvala Vam od srca!</h2>
+        
+        <div class="donation-form">
+            <label for="amount">Iznos donacije (€):</label>
+            <input type="number" id="amount" name="amount" placeholder="Iznos" required>
+            
+            <label for="card">Broj kartice:</label>
+            <input type="text" id="card" name="card" placeholder="Broj kartice" pattern="\d{16}" required>
+            
+            <div class="card-details">
+                <label for="expiration">Datum valjanosti kartice:</label>
+                <input type="text" id="expiration" name="expiration" placeholder="MM/YYYY" pattern="\d{6}" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" pattern="\d{3}" required>
+            </div>
+            
+            <label for="message">Ostavite poruku (opcionalno):</label>
+            <textarea id="message" name="message" placeholder="Vaša poruka"></textarea>
+            
+            <button type="submit">Doniraj</button>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <img src="../Images/paw-icon.png" alt="Right Image">
+    </div>
+</div>
+
+    
+</body>
+<div class="footer">
+    <p>&copy; <a class="footerlink" href="#">2023 Indigo</a> |<a href="#" class="footerlink">Terms of Service</a>|<a href="#" class="footerlink">Privacy Policy </a></p>
+</div>  
+</html>

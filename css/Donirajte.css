@@ -1,0 +1,671 @@
+/* projekt.css */
+
+
+
+/* za sve*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    width: 1;
+    margin: auto;
+}
+
+.navbar img {
+    width: 30vh;
+    height: auto;
+}
+
+.navbar a,
+.dropdown .dropbtn {
+    font-size: 3vh;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2vh 2.5vh;
+    border-radius: 1.4vh; 
+    text-decoration: none;
+    font-size: 3vh;
+    color: black;
+}
+.donategumb{
+background-color: gold;
+}
+.donategumb:hover{
+    background-color: #9CDD5A;
+    color:white;
+    transition: background-color 0.7s ease;
+}
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    display: inline-block;
+    
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #9CDD5A;
+    color:white;
+    transition: background-color 0.7s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 1vh 2vh 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 1.4vh; 
+    width: fit-content;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #9CDD5A;
+    color:white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.par{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+.par p{
+    width: 60%;
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 3%;
+  
+}
+.cilj {
+    display: flex;
+    margin: auto;
+    font-size: 3vh;
+    font-weight: bold;
+    border: 0.4vh solid #9CDD5A;
+    border-radius: 3vh;
+    background-color: white;
+    color: #9CDD5A;
+    padding: 1.5vh  3vh;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+  
+}
+
+.cilj:hover {
+    background-color: #9CDD5A;
+    color:white;
+}
+.footer {
+    background-color: #9CDD5A;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1dvh;
+    font-size: 3vh;
+    text-align: center;
+    padding: 3vh;
+    bottom: 0vh;
+    width: 100%;
+ 
+}
+.logo-link{
+    background-color: white;
+}
+
+/*za sve*/
+
+    .veljiki{
+        display: flex;
+    }
+
+    .donation-container {
+        width: 70vh;
+        margin: auto;
+        padding: 3vh;
+        box-sizing: border-box;
+        background-color: #9CDD5A;
+        border: 0.2vh solid #ddd;
+        border-radius: 1.3vh;
+        margin-top: 7vh;
+        box-shadow: 0 0 1.3vh rgba(0, 0, 0, 0.1);
+    }
+
+    .donation-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .donation-form label {
+        font-size: 3vh;
+        color: #333;
+        color: white;
+    }
+
+    .donation-form input,
+    .donation-form textarea,
+    .donation-form button {
+        padding: 1.8vh;
+        box-sizing: border-box;
+        border: 0.3vh solid #ccc;
+        border-radius: 0.8vh;
+        font-size: 2vh;
+        color: #333;
+    }
+
+    .donation-form .card-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    .donation-form .card-details input {
+        flex: 1;
+    }
+
+    .donation-form button {
+        background-color: #3C9354;
+        color: white;
+        font-size: 3vh;
+        border: 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .donation-form button:hover {
+        background-color: #F5E764;
+    }
+    .est{
+        margin: auto;
+        width: fit-content;
+        padding: 1%;
+        text-align: center;
+        background-color: #9CDD5A;
+        border: 0.3vh solid #9CDD5A;
+        border-radius: 15vh;
+        color: #9CDD5A;
+        
+        margin-bottom: 3vh;
+        cursor: pointer;
+        transition: background-color 0.7s ease;
+        font-size: 6vh;
+        font-weight: bold;
+        letter-spacing: 0.2dvh;
+        color:white;
+        margin-top: 0;
+    }
+    .left-container{
+        width: 20%;
+        height: 100vh;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 1.3vh;
+        margin-bottom: 5%;
+        margin-top: 3vh;
+    }
+    .right-container {
+        width: 20%;
+        height: 35vh;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 1.3vh;
+        margin-bottom: 20vh;
+    }
+
+    .left-container img {
+        width: 100%;
+        transform: skewX(-3deg);
+        border-top-left-radius: 1.3vh;
+        border-top-right-radius: 1.3vh;
+    }
+    .right-container img {
+        width: 100%;
+        transform: skewX(3deg);
+        border-top-left-radius: 1.3vh;
+        border-top-right-radius: 1.3vh;
+    }
+    .donategumb{
+        background-color: #F5E764;
+        }
+        .donategumb:hover{
+            background-color: #9CDD5A;
+            color:white;
+            transition: background-color 0.7s ease;
+        }
+
+    .left-container {
+        order: -1; /* Move to the left of the .donation-container */
+    }
+
+    .right-container img {
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.3vh;
+        border-bottom-right-radius: 1.3vh;
+    }
+    .footerlink{
+        color:white;
+        text-decoration: none;
+    }
+    .footerlink:hover{
+        color:#F5E764;
+    }
+/*
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAa
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAAAAA
+
+
+*/
+@media (max-width: 1200px) {
+    .logo-navigation{
+        height: auto;
+        margin-bottom: 3vh;
+    }
+    .navbar {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .navbar img {
+        width: 30vh;
+        height: auto;
+    }
+    
+    .navbar a,
+    .dropdown .dropbtn {
+        font-size: 3vh;
+        color: black;
+        text-align: center;
+        padding: 2vh 2.5vh;
+        border-radius: 1.4vh;
+        text-decoration: none;
+        width: 100%;
+        font-size: 3vh;
+        color: black;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .donategumb {
+        background-color: #F5E764;
+    }
+    
+    .donategumb:hover {
+        background-color: #82B84B;
+        color: white;
+        transition: background-color 0.7s ease;
+    }
+    
+    .dropdown .dropbtn {
+        border: none;
+        outline: none;
+        color: black;
+        background-color: inherit;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: #82B84B;
+        color: white;
+        transition: background-color 0.7s ease;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: lightgreen;
+        box-shadow: 0 1vh 2vh 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: left;
+        border-radius: 1.4vh;
+        width: fit-content;
+        width: 100%;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #82B84B;
+        color: white;
+    }
+    
+    
+}
+
+    @media (max-width: 800px) {
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            margin: auto 0;
+            width: 100%;
+        }
+        
+        .navbar {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: white;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+        }
+        
+        .navbar img {
+            width: 30vh;
+            height: auto;
+        }
+        
+        .navbar a,
+        .dropdown .dropbtn {
+            font-size: 3vh;
+            color: black;
+            text-align: center;
+            padding: 2vh 2.5vh;
+            border-radius: 1.4vh; 
+            text-decoration: none;
+            margin-left: 1vh;
+            width: 100%;
+            font-size: 3vh;
+            color: black;
+            display: block;
+            align-items: center;
+        }
+        .donategumb{
+        background-color: #F5E764;
+        }
+        
+    
+        .donategumb:hover{
+            background-color: #8AC450;
+            color:white;
+            transition: background-color 0.7s ease;
+        }
+        .dropdown .dropbtn {
+            border: none;
+            outline: none;
+            color: black;
+            background-color: inherit;
+            text-align: center;
+            
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #8AC450;
+            color:white;
+            transition: background-color 0.7s ease;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: lightgreen;
+            box-shadow: 0 1vh 2vh 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+            border-radius: 1.4vh; 
+            width: fit-content;
+            width: 100%;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            text-decoration: none;
+            
+            text-align: center;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #8AC450;
+            color:white;
+        }
+        
+        
+.show-dropdown .dropdown-content {
+    display: block;
+}
+.par{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+.par p{
+    width: 60%;
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 3%;
+  
+}
+.cilj {
+    display: flex;
+    margin: auto;
+    font-size: 3vh;
+    font-weight: bold;
+    border: 0.4vh solid #9CDD5A;
+    border-radius: 3vh;
+    background-color: white;
+    color: #9CDD5A;
+    padding: 1.5vh  3vh;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+  
+}
+
+.cilj:hover {
+    background-color: #9CDD5A;
+    color:white;
+}
+.footer {
+    background-color: #9CDD5A;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1dvh;
+    font-size: 3vh;
+    text-align: center;
+    padding: 3vh;
+    bottom: 0vh;
+    width: 100%;
+ 
+}
+.logo-link{
+    background-color: white;
+}
+
+/*za sve*/
+
+    .veljiki{
+        display: flex;
+    }
+
+    .donation-container {
+        width: 70vh;
+        margin: auto;
+        padding: 3vh;
+        box-sizing: border-box;
+        background-color: #9CDD5A;
+        border: 0.2vh solid #ddd;
+        border-radius: 1.3vh;
+        margin-top: 7vh;
+        box-shadow: 0 0 1.3vh rgba(0, 0, 0, 0.1);
+    }
+
+    .donation-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .donation-form label {
+        font-size: 3vh;
+        color: #333;
+        color: white;
+    }
+
+    .donation-form input,
+    .donation-form textarea,
+    .donation-form button {
+        padding: 1.8vh;
+        box-sizing: border-box;
+        border: 0.3vh solid #ccc;
+        border-radius: 0.8vh;
+        font-size: 2vh;
+        color: #333;
+    }
+
+    .donation-form .card-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    .donation-form .card-details input {
+        flex: 1;
+    }
+
+    .donation-form button {
+        background-color: #3C9354;
+        color: white;
+        font-size: 3vh;
+        border: 0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .donation-form button:hover {
+        background-color: #F5E764;
+    }
+    .est{
+        margin: auto;
+        width: fit-content;
+        padding: 1%;
+        text-align: center;
+        background-color: #9CDD5A;
+        border: 0.3vh solid #9CDD5A;
+        border-radius: 15vh;
+        color: #9CDD5A;
+        
+        margin-bottom: 3vh;
+        cursor: pointer;
+        transition: background-color 0.7s ease;
+        font-size: 6vh;
+        font-weight: bold;
+        letter-spacing: 0.2dvh;
+        color:white;
+        margin-top: 0;
+    }
+    .left-container{
+        width: 20%;
+        height: 100vh;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 1.3vh;
+        margin-bottom: 5%;
+        margin-top: 3vh;
+    }
+    .right-container {
+        width: 20%;
+        height: 35vh;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 1.3vh;
+        margin-bottom: 20vh;
+    }
+
+    .left-container img {
+        width: 100%;
+        transform: skewX(-3deg);
+        border-top-left-radius: 1.3vh;
+        border-top-right-radius: 1.3vh;
+    }
+    .right-container img {
+        width: 100%;
+        transform: skewX(3deg);
+        border-top-left-radius: 1.3vh;
+        border-top-right-radius: 1.3vh;
+    }
+    .donategumb{
+        background-color: #F5E764;
+        }
+        .donategumb:hover{
+            background-color: #9CDD5A;
+            color:white;
+            transition: background-color 0.7s ease;
+        }
+
+    .left-container {
+        order: -1; /* Move to the left of the .donation-container */
+    }
+
+    .right-container img {
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.3vh;
+        border-bottom-right-radius: 1.3vh;
+    }
+    .footerlink{
+        color:white;
+        text-decoration: none;
+    }
+    .footerlink:hover{
+        color:#F5E764;
+    }
+
+
+
+    }

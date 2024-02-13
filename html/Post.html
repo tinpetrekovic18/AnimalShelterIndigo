@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/Post.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var images = document.querySelectorAll('.fullscreenable-image');
+            var fullscreenContainer = document.createElement('div');
+            fullscreenContainer.classList.add('fullscreen-image');
+            document.body.appendChild(fullscreenContainer);
+        
+            images.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    fullscreenContainer.innerHTML = ''; // Clear previous content
+                    var clonedImage = image.cloneNode(true);
+                    fullscreenContainer.appendChild(clonedImage);
+                    fullscreenContainer.style.display = 'flex';
+                });
+            });
+        
+            fullscreenContainer.addEventListener('click', function () {
+                fullscreenContainer.style.display = 'none';
+            });
+        });
+        </script>
+</head>
+
+<body style="background-color:white;">
+    <div class="navbar">
+        <div id="logoContainer"     onclick="window.location.href='projekt-naslovna.html';">
+            <img class="logo-navigation" src="../Images/Logo-navigation.png">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" >Uključite se
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Volontiranje.html">Volontiranje i rad u udruzi</a>
+                <a href="Radionice.html">Radionice i događanja</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" >Pronađite ljubimca
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Psi.html">Psi</a>
+                <a href="Macke.html">Mačke</a>
+                <a href="Pronadite.html">Pronađite svog ljubimca</a>
+            </div>
+        </div>
+        <a href="SretnoUdomljeni.html">Sretno udomljeni</a>
+        <div class="dropdown">
+            <button class="dropbtn">Zatražite savjet
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Najcesca-pitanja.html">Najčešća pitanja</a>
+                <a href="NovoPitanje.html">Novo pitanje</a>
+                <a href="https://www.facebook.com/groups/253747272139419/" >Forum</a>
+            </div>
+        </div>
+        <a href="Info.html">Info</a>
+        <a href="O-Udruzi.html">O udruzi</a>
+        <a class="donategumb" href="Donirajte.html">DONIRAJTE</a>
+    </div>
+
+    <div class="banner-container">
+        <img class="banner" src="../Images/post4x.jpg">
+    </div>
+    <div class="tekst">
+    <h3>Emotivni Susreti i Spasovi: Udruga za Zaštitu Životinja Proslavila Novi Milestone</h3>
+    <h2>Zagreb, 17.10.2023.</h2>
+    <p>Uzbudljivo i emotivno okupljanje obilježilo je najnoviji događaj udruge za zaštitu životinja, gdje su zaljubljenici u životinje i volonteri zajedno proslavili postignuća i buduće planove udruge.
+
+        U sklopu ovogodišnjeg okupljanja, udruga je ponosno objavila udomljavanje više od 200 životinja tijekom protekle godine, što predstavlja značajan korak prema ostvarivanju njihove misije stvaranja ljubavi i skloništa za svaku napuštenu šapu. Posjetitelji su imali priliku susresti neke od sretnih udomitelja, čuti njihove inspirativne priče te dijeliti iskustva s drugim zaljubljenicima.
+        
+        Emocionalni trenuci obilježili su i trenuci ponovnog spajanja izgubljenih ljubimaca s njihovim vlasnicima, zahvaljujući pravovremenim mikročipovima i predanom radu volontera koji rade na reunifikaciji izgubljenih životinja s njihovim obiteljima.
+        
+        Ovaj događaj također je bio prilika za pokretanje novih projekata i suradnji. Udruga je najavila planove za proširenje svojih edukativnih programa, jačanje suradnje s lokalnim zajednicama te osnivanje dodatnih volonterskih timova koji će doprinijeti dobrobiti životinja na području.
+        
+        Svi posjetitelji koji su podržali ovaj događaj doprinijeli su radu udruge, a sredstva prikupljena donacijama bit će usmjerena prema daljnjim naporima spašavanja i skrbi za životinje.
+        
+        Ovaj događaj svjetlo baca na predanost i entuzijazam zajednice zaštite životinja te ističe važnost suradnje i podrške u ostvarivanju zajedničkog cilja - stvaranja boljeg sutra za sve životinje.</p>
+    </div>
+    <div class="slikice">
+        <div class="slika">
+            <img class="fullscreenable-image" src="../Images/post11.jpg" alt="Fullscreen Image 1">
+        </div>
+        <div class="slika">
+            <img class="fullscreenable-image" src="../Images/post111.jpg" alt="Fullscreen Image 2">
+        </div>
+        <div class="slika">
+            <img class="fullscreenable-image" src="../Images/psot1111.jpg" alt="Fullscreen Image 3">
+        </div>  
+    </div>
+    <div class="button-container">
+        <a href="#" class="cilj" style="text-decoration: none;">Prijašnja objava</a>
+        <a href="#" class="cilj" style="text-decoration: none;">Sljedeća objava</a>
+    </div>
+    
+</body>
+<div class="footer">
+    <p>&copy; <a class="footerlink" href="#">2023 Indigo</a> |<a href="#" class="footerlink">Terms of Service</a>|<a href="#" class="footerlink">Privacy Policy </a></p>
+</div>  
+
+</html>
+

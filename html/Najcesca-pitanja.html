@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-REh1guqDqyqjAsA0EBkp8xPzwr3uRwFKCt4DxIefhPI6LIOAV0mODQNsM5dS1w+iF3QbVcyF70a1ZlZBk7hFdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Najcesca-pitanja.css">
+    
+</head>
+
+<body style="background-color:white;">
+    <div class="navbar">
+        <div id="logoContainer"  onclick="window.location.href='../projekt-naslovna.html';">
+            <img class="logo-navigation" src="../Images/Logo-navigation.png">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Uključite se
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Volontiranje.html">Volontiranje i rad u udruzi</a>
+                <a href="Radionice.html">Radionice i događanja</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Pronađite ljubimca
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Psi.html">Psi</a>
+                <a href="Macke.html">Mačke</a>
+                <a href="Pronadite.html">Pronađite svog ljubimca</a>
+            </div>
+        </div>
+        <a href="SretnoUdomljeni.html">Sretno udomljeni</a>
+        <div class="dropdown">
+            <button class="dropbtn" style="background-color: #82B84B; color:white">Zatražite savjet
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Najcesca-pitanja.html">Najčešća pitanja</a>
+                <a href="NovoPitanje.html">Novo pitanje</a>
+                <a href="https://www.facebook.com/groups/253747272139419/" target="_blank">Forum</a>
+            </div>
+        </div>
+        <a href="Info.html">Info</a>
+        <a href="O-Udruzi.html">O udruzi</a>
+        <a class="donategumb" href="Donirajte.html" >DONIRAJTE</a>
+    </div>
+
+
+    <div class="faq-container">
+        <h2 class="est">Najčešće postavljena pitanja</h2>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">Q: Kako mogu postati volonter u Udruzi za zaštitu životinja?</div>
+            <div class="faq-answer" id="answer1">A: Za postati volonter, jednostavno nas kontaktirajte putem naše web stranice ili direktno u našem sjedištu. Imamo različite volonterske programe i uvijek su nam dobrodošli entuzijastični pojedinci.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">Q: Kako mogu udomiti životinju iz vaše Udruge?</div>
+            <div class="faq-answer" id="answer2">A: Proces udomljavanja uključuje ispunjavanje aplikacije, susret s potencijalnom životinjom, provjeru uvjeta udomljavanja te potpisivanje ugovora o odgovornom vlasništvu. Sve informacije o trenutnim ljubimcima na udomljavanju možete pronaći na našoj web stranici.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">Q: Kako mogu financijski podržati rad Udruge?</div>
+            <div class="faq-answer" id="answer3">A: Postoje različiti načini podrške, uključujući donacije putem naše web stranice, sudjelovanje u fundraisinškim događajima ili postavljanje redovitih mjesečnih donacija. Svaka financijska podrška pomaže nam u pružanju skloništa, hrane i medicinske skrbi životinjama u nevolji.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">Q: Koliko traje proces udomljavanja?</div>
+            <div class="faq-answer" id="answer4">A:  Proces udomljavanja obično traje nekoliko dana. Nakon podnošenja aplikacije, provodimo razgovor, provjeru uvjeta te dogovaramo susret s potencijalnom životinjom. Cilj nam je pronaći najbolje moguće podudaranje između životinje i budućeg vlasnika.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(5)">Q: Kako se brinete o zdravlju udomljenih životinja?</div>
+            <div class="faq-answer" id="answer5">A: Svaka životinja prolazi veterinarski pregled prije udomljavanja, cijepljenje i sterilizaciju/kastraciju. Udomiteljima pružamo sve potrebne informacije i savjete o daljnjoj skrbi te smo uvijek dostupni za bilo kakve dodatne konzultacije.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(6)">Q: Kako mogu prijaviti slučaj zlostavljanja ili napuštanja životinja?</div>
+            <div class="faq-answer" id="answer6">A: Ako primijetite slučaj zlostavljanja ili napuštanja životinja, odmah nas kontaktirajte putem naše hitne telefonske linije ili putem e-maila. Prijave su anonimne, a naša ekipa će poduzeti odgovarajuće korake u suradnji s nadležnim institucijama.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(7)">Q: Što učiniti ako pronađem napuštenu životinju?</div>
+            <div class="faq-answer" id="answer7">A: Ako pronađete napuštenu životinju, najbolje je kontaktirati lokalne sklonište ili nas putem hitne linije. Možemo vam pružiti smjernice o sigurnom rukovanju i pružiti podršku dok pokušavate pronaći privremeni dom za napuštenog ljubimca.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(8)">Q: Kako se odvija proces socijalizacije za životinje prije udomljavanja?</div>
+            <div class="faq-answer" id="answer8">A: Svaka životinja prolazi kroz proces socijalizacije koji uključuje interakciju s drugim životinjama i volonterima. Cilj nam je osigurati da su životinje društvene, prilagodljive i spremne za novi dom.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(9)">Q: Mogu li donirati potrebne materijale ili hranu vašoj Udruzi?</div>
+            <div class="faq-answer" id="answer9">A:  Da, donacije materijala, hrane, igračaka i opreme uvijek su dobrodošle. Kontaktirajte nas kako biste dobili informacije o trenutnim potrebama i dogovorili način dostave.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(10)">Q: Kako pridonijeti edukaciji o zaštiti životinja?</div>
+            <div class="faq-answer" id="answer10">A: Možete sudjelovati u našim edukativnim programima ili organizirati događaje u suradnji s nama. Osim toga, dijeljenje informacija putem društvenih medija i aktivno širenje svijesti u zajednici također igraju ključnu ulogu u edukaciji o zaštiti životinja.</div>
+        </div>
+        
+
+    </div>
+    <div class="par">
+        <p>Niste pronašli odgovor ovdje? <br>Postavite nam novo pitanje ili pokušajte svoj odgovor pronaći na Forumu. </p>
+        </div>
+
+    <div class="button-container">
+        <div class="cilj"  id="logoContainer" onclick="window.location.href='NovoPitanje.html';">
+        Novo Pitanje
+        </div>
+        <div class="cilj"  id="logoContainer" onclick="window.open('https://www.facebook.com/groups/253747272139419/', '_blank');"  >
+            Forum
+            </div>
+      </div>
+      
+    </div>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById("answer" + id);
+            var item = answer.parentElement;
+
+            if (item.classList.contains("active")) {
+                item.classList.remove("active");
+            } else {
+                item.classList.add("active");
+            }
+        }
+    </script>
+
+    
+
+    
+</body>
+<div class="footer">
+    <p>&copy; <a class="footerlink" href="#">2023 Indigo</a> |<a href="#" class="footerlink">Terms of Service</a>|<a href="#" class="footerlink">Privacy Policy </a></p>
+</div>  
+</html>
